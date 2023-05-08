@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration</title>
+<link rel="stylesheet" href="css/bootstrap.css"></link>
+</head>
+<body class="container-fluid">
+
+	<form action="register" method="post">
+		<h2>Registration Form !!!</h2>
+		
+		<table>
+			<tr>
+				<td>Name :- </td>
+				<td><input type ="text" name="userName" required></td>
+			</tr>
+			
+			<tr>
+				<td>Email :- </td>
+				<td><input type ="email" name="email" required></td>
+			</tr>
+			<tr>
+				<td>Mobile :- </td>
+				<td><input type ="text" name="pnum" required></td>
+			</tr>
+			
+			<tr>
+				<td>DOB :- </td>
+				<td><input type ="date" name="dob" required></td>
+			</tr>
+			
+			<tr>
+				<td>City :- </td>
+				<td><select name="city">
+				<option value="">Select</option>
+					<option value="Thane">Thane</option>
+					<option value="Mumbai">Mumbai</option>
+					<option value="NaviMumbai">Navi Mumbai</option>
+					<option value="Pune">Pune</option>
+					<option value="Hydrabad">Hydrabad</option>
+					<option value="Delhi">Delhi</option>
+					</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td><button type="submit">Register</button></td>
+				<td><button type="reset">Reset</button></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>

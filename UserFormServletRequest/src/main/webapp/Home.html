@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form Using Servlet</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body class="container-fluid">
+	<div class="card" style="width:600px ; margin:auto ; margin-top:50px">
+		<h2 class="bg-success text-light card-header" align="center">Registration Form !</h2>
+		
+		<form action="register" class="form" method="get">
+		
+			<table class="table table-hover table-striped">
+				<tr>
+					<td>Name :-</td>
+					<td><input type="text" name="name"></td>
+				</tr>
+
+				<tr>
+					<td>DOB :-</td>
+					<td><input type="date" name="dob"></td>
+				</tr>
+
+				<tr>
+					<td>Gender :-</td>
+					<td><input type="radio" name="gender" value="male">Male
+						<input type="radio" name="gender" value="female">Female</td>
+				</tr>
+
+				<tr>
+					<td>Qualification :-</td>
+					<td><select name="quali">
+							<option value="" selected="selected">Select</option>
+							<option value="Engg">B.Tech</option>
+							<option value="Accounting">B.Com</option>
+							<option value="Arts">BA</option>
+							<option value="MBBS">Medico</option>
+					</select></td>
+				</tr>
+
+				<tr>
+					<td>Hobbies :-</td>
+					<td><input type="checkbox" name="hb" value="reading">Reading
+						<input type="checkbox" name="hb" value="writting">Writting
+						<input type="checkbox" name="hb" value="Driving">Driving 
+						<input type="checkbox" name="hb" value="web">Web Series 
+						<input type="checkbox" name="hb" value="cricket">Cricket 
+						<input type="checkbox" name="hb" value="Playing">Playing
+					</td>
+				</tr>
+
+				<tr>
+					<td><button type="submit" class="btn btn-outline-success" style=" margin-right: 45px;">Submit</button></td>
+					<td><button type="reset" class="btn btn-outline-danger">Reset</button></td>
+				</tr>
+
+			</table>
+		</form>
+	</div>
+</body>
+</html>
